@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.navbar-wrapper {
+  background-color: #3b3b39;
+  height: 100vh;
+  width: 100%;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #5d44ec;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0) rotate(-180deg);
+  transition: transform 0.5s;
+}
+
+.change .navbar {
+  transform: scale(1) rotate(0);
+}
+
+.navbar-link {
+  position: absolute;
+
+}
+
+.navbar-link i {
+  font-size: 2.5rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover i {
+  color: #12c095;
+}
+.navbar-link:nth-child(1) {
+  top: 2rem;
+}
+
+.navbar-link:nth-child(2) {
+  top: 6rem;
+  right: 2rem;
+}
+
+.navbar-link:nth-child(3) {
+  bottom: 6rem;
+  right: 2rem;
+}
+
+.navbar-link:nth-child(4) {
+  bottom: 2rem;
+}
+
+.navbar-link:nth-child(5) {
+  bottom: 6rem;
+  left: 2rem;
+}
+
+.navbar-link:nth-child(6) {
+  top: 6rem;
+  left: 2rem;
+}
+
+.navbar-btn {
+  background-color: #12c095;
+  position: absolute;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbar-btn i {
+  font-size: 2rem;
+  color: #fff;
+  transition: transform 0.5s;
+}
+
+.change .navbar-btn i {
+  transform: rotate(45deg);
+}
